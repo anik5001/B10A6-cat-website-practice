@@ -53,10 +53,10 @@
 
   <main class="max-w-11/12 mx-auto">
     <!-- banner Section -->
-    <section class="my-20  flex justify-center items-center text-center">
+    <section class="my-20  md:flex justify-center items-center text-center">
       <div class="space-y-3">
         <p class="text-gray-600 text-lg font-bold">Bringing Families Together ❤️‍🔥 </p>
-        <h1 class="font-bold text-7xl">Your Path to Adoption <br> Starts Here</h1>
+        <h1 class="font-bold text-xl md:text-7xl">Your Path to Adoption <br> Starts Here</h1>
         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
           <br>
           at its layout. The point of using Lorem Ipsum is that it has a.
@@ -83,21 +83,63 @@
         </p>
       </section>
       <!--   -->
-      <div id="categoryPetsContainer" class="flex justify-around">
+      <div id="categoryPetsContainer" class="flex flex-wrap justify-around">
 
       </div>
     </section>
-    <section class="my-20 grid grid-cols-11 gap-3">
-      <section class="col-span-8">
+    <section class="my-20 grid md:grid-cols-11 gap-3">
+      <section class="md:col-span-8">
         <h1 class="text-xl font-bold mb-10">Best Deal For you</h1>
-        <div id="showPetsContainer" class="grid grid-cols-3 gap-4 justify-center"></div>
+        <div id="showPetsContainer" class="grid md:grid-cols-3 gap-4 justify-center"></div>
       </section>
-      <section class="col-span-3 p-2">
+      <section class="md:col-span-3 p-2">
         <h1 class="font-bold text-xl text-center mb-10">Like Images</h1>
         <div id="likeImgContainer" class="grid grid-cols-2 gap-1"></div>
       </section>
     </section>
   </main>
+
+  <footer class="bg-black">
+    <section
+      class="max-w-11/12 mx-auto text-white text-center md:text-left md:flex grid gap-5 md:justify-between py-16 ">
+      <div>
+        <a class="btn btn-ghost text-xl mb-2  md:mb-8"><img src="./images/logo.webp" alt=""> Peddy</a>
+        <ul>
+          <li>Location: av. Washington 165, NY CA 54003</li>
+          <li>Phone: +31 85 964 47 25</li>
+          <li>Email:aniksarker047.com</li>
+          <li>Openings hours: 9.00 AM - 5.00 PM</li>
+        </ul>
+        <div class="mt-4">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+
+        </div>
+
+      </div>
+      <div>
+        <h1 class="md:mb-8 mb-2">Useful Links</h1>
+        <div class="flex flex-col">
+          <a href="">Home</a>
+          <a href="">About Us</a>
+          <a href="">Animals</a>
+          <a href="">Foundation</a>
+          <a href="">Contact </a>
+        </div>
+      </div>
+      <div>
+        <h1 class="md:mb-8 mb-2">Drop a Message</h1>
+        <input type="email" placeholder="Enter Your Email" class="mb-2 h-10 w-[200px]">
+        <br>
+        <button
+          class="bg-green-700 py-1 px-4 rounded-md text-white w-[200px] hover:shadow-md hover:bg-green-400">Subscribe</button>
+      </div>
+
+    </section>
+
+  </footer>
   <!-- Open the modal using ID.showModal() method -->
   <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
   <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
