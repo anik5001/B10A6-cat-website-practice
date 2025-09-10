@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>peddy-website</title>
+  <!-- daisy and tailwind cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header class="max-w-11/12 mx-auto">
+    <div class="navbar bg-base-100 shadow-sm">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+            <li><a>Home</a></li>
+            <li><a>Shop</a></li>
+
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl"><img src="./images/logo.webp" alt=""> Peddy</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+
+          <li><a>Home</a></li>
+          <li><a>Shop</a></li>
+
+          <li><a>Contact</a></li>
+
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn"><i class="fa-regular fa-user"></i></a>
+      </div>
+    </div>
+
+  </header>
+
+  <main class="max-w-11/12 mx-auto">
+    <!-- banner Section -->
+    <section class="my-20  flex justify-center items-center text-center">
+      <div class="space-y-3">
+        <p class="text-gray-600 text-lg font-bold">Bringing Families Together ❤️‍🔥 </p>
+        <h1 class="font-bold text-7xl">Your Path to Adoption <br> Starts Here</h1>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
+          <br>
+          at its layout. The point of using Lorem Ipsum is that it has a.
+        </p>
+        <button
+          class="bg-green-800 py-2 px-4 text-gray-400 hover:bg-green-500 hover:shadow-2xl hover:text-white rounded-xl">View
+          More</button>
+        <img src="./images/pet.webp" alt="">
+      </div>
+
+
+    </section>
+
+    <section>
+
+      <section class="mb-20">
+        <h1 class="text-center text-3xl font-bold">Adopt Your Best Friend</h1>
+        <p class="text-center my-4 text-gray-500">It is a long established fact that a reader will be distracted by the
+          readable content
+          of a
+          <br>
+          page when looking
+          at its layout. The point of using Lorem Ipsum is that it has a.
+        </p>
+      </section>
+      <!--   -->
+      <div id="categoryPetsContainer" class="flex justify-around">
+
+      </div>
+    </section>
+    <section class="my-20 grid grid-cols-11 gap-3">
+      <section class="col-span-8">
+        <h1 class="text-xl font-bold mb-10">Best Deal For you</h1>
+        <div id="showPetsContainer" class="grid grid-cols-3 gap-4 justify-center"></div>
+      </section>
+      <section class="col-span-3 p-2">
+        <h1 class="font-bold text-xl text-center mb-10">Like Images</h1>
+        <div id="likeImgContainer" class="grid grid-cols-2 gap-1"></div>
+      </section>
+    </section>
+  </main>
+  <!-- Open the modal using ID.showModal() method -->
+  <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+  <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+    <div class="modal-box">
+      <div id="modalShowContainer"></div>
+      <div class="modal-action">
+        <form method="dialog">
+          <!-- if there is a button in form, it will close the modal -->
+          <button class="btn">Close</button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+  <script src="./script/index.js"></script>
+</body>
+
+</html>
